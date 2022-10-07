@@ -150,7 +150,7 @@ jobs:
 
       - name: Initialize the build environment
         id: init
-        uses: ansible-community/github-docs-build/actions/ansible-docs-build-init@main
+        uses: tremble/github-docs-build/actions/ansible-docs-build-init@main
         with:
           collections: ${{ steps.vars.outputs.col-name }}
           dest-dir: ${{ steps.vars.outputs.init-dir }}
